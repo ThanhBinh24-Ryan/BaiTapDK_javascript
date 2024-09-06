@@ -1,7 +1,7 @@
 function bai1_onclick(){
     const number1 = document.getElementById("bai1_id").value *1;
     let resutl;
-    if(number1 > 16){
+    if(number1 >= 16){
         resutl = "Da du tuoi lai xe";
     } else{
         resutl = " chua du tuoi lai xe";
@@ -79,4 +79,19 @@ const bai11_onclick = () =>{
     }
     const chanLe = document.getElementById("bai1.1_div");
     chanLe.innerHTML = resutl;
+}
+const baimk_onclick = () =>{
+    const number = document.getElementById("baimk_id").value;
+    let resutl;
+    const tamp = number.length;
+    if(tamp >= 8 ){
+        resutl = " Mat khau MANH ";
+
+    }else{
+        resutl = " Mat Khau YEU ";
+
+
+    }
+    const matKhau = document.getElementById("baimk_div");
+    matKhau.innerHTML = resutl;
 }
